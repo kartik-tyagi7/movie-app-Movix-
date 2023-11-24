@@ -1,0 +1,19 @@
+.footer{
+  background-color: var(--darkBg);
+}
+
+.socalMedaIcon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--darkerBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+
+.socalMedaIcon:hover {
+  color: var(--pink);
+  box-shadow: 0 0 8px 1px  var(--pink) ;
+}

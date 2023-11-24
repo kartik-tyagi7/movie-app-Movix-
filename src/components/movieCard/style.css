@@ -1,0 +1,15 @@
+.movieCard {
+  width: calc(50% - 5px);
+}
+
+@media (min-width: 768px) {
+  .movieCard {
+    width: calc(25% - 15px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .movieCard {
+    width: calc(20% - 16px);
+  }
+}

@@ -1,0 +1,17 @@
+
+
+.videoPlayer {
+  transition: transform 250ms;
+}
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.opacityLayer {
+  opacity: 1 !important;
+}
+.videoPlayer {
+  transform: scale(1) !important;
+}

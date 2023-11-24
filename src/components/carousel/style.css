@@ -1,0 +1,32 @@
+.arrow {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  /* opacity: 0.5; */
+  z-index: 1;
+  transition: all ease 0.3s;
+}
+
+.arrow:hover {
+  opacity: 0.8;
+}
+
+.skeletonItem {
+  width: 125px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .skeletonItem {
+    width: calc(25% - 15px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skeletonItem {
+    width: calc(20% - 16px);
+  }
+}

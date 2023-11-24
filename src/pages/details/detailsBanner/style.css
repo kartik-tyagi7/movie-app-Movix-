@@ -1,0 +1,59 @@
+.opacity-layer {
+  /* background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #04152d 79.17%); */
+  background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #04152d 79.17%);
+}
+
+.info {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+  display: flex;
+}
+
+.infoItem {
+  margin-right: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.text {
+  margin-right: 10px;
+  opacity: 0.5;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* play button svg css */
+.triangle {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: white;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.circle {
+  stroke: white;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 1300;
+  transition: all 0.5s ease-in-out;
+}
+
+.playbtn:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: var(--pink);
+  animation: trailorPlay 0.5s ease-in-out;
+}
+
+.playbtn:hover .circle {
+  stroke-dashoffset: 0;
+  stroke: var(--pink);
+}
+
+/* circleRating */
+/* .circleRating {
+} */

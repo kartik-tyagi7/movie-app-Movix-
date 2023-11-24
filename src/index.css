@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* variables */
+  --black: #04152d;
+  --black2: #041226;
+  --black3: #020c1b;
+  /* --bg: rgb(24, 24, 24); */
+  --bg: #0D1117;
+  --darkBg: rgb(0, 0, 0);
+  --darkerBg: rgb(0, 0, 0);
+  --black-lighter: #1c4b91;
+  --black-light: #173d77;
+  --pink: #da2f68;
+  --orange: #f89e00;
+  --gradient: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  /* background-color: var(--black); */
+  /* color: var(--pink); */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.max-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.opacity-layer {
+  @apply w-full h-[250px] absolute left-0 bottom-0;
+  background: linear-gradient(180deg, rgba(10, 45, 4, 0) 0%, #04152d 79.17%);
+  background: linear-gradient(180deg, rgba(41, 41, 41, 0) 0%, #0D1117 79.17%);
+}
+
+.color-gradient {
+  background: var(--gradient);
+}
+
+
+.lazy-load-image-background{
+  width: 100%;
+  height: 100%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
