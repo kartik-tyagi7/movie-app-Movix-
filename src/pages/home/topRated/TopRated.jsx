@@ -17,7 +17,7 @@ const TopRated = () => {
   };
 
   return (
-    <div className="carouselSection relative mb-20">
+    <div className="carouselSection relative mb-20 max-sm:mb-0">
       <div className="max-container flex items-center justify-between mb-5">
         <span className="carouselTitle text-2xl text-white font-normal">
           Top Rated

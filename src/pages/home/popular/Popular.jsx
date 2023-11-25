@@ -18,7 +18,7 @@ const Popular = () => {
   };
 
   return (
-    <div className="carouselSection relative mb-20">
+    <div className="carouselSection relative mb-20 max-sm:mb-0">
       <div className="max-container flex items-center justify-between mb-5">
         <span className="carouselTitle text-2xl text-white font-normal">
           What's Popular
@@ -26,7 +26,7 @@ const Popular = () => {
         <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
       </div>
 
-      <Carousel data={data?.results} loading={loading} endPoint={endPoint}/>
+      <Carousel data={data?.results} loading={loading} endPoint={endPoint} />
     </div>
   );
 };

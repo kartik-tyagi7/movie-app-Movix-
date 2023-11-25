@@ -82,10 +82,10 @@ const Carousel = ({ data, loading, endPoint }) => {
                   </div>
 
                   <div className="textBlock text-white flex flex-col pl-1 relative bottom-7">
-                    <span className="title text-[16px] mb-[3px] leading-6 md:text-xl truncate">
+                    <span className="title text-[16px] max-sm:text-[13px] mb-[3px] leading-6 md:text-xl truncate">
                       {item.title || item.name}
                     </span>
-                    <span className="date text-sm opacity-[0.5]">
+                    <span className="date text-sm max-sm:text-[13px] opacity-[0.5]">
                       {dayjs(item.release_date).format("MMM D, YYYY")}
                     </span>
                   </div>

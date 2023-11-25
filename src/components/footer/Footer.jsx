@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className="footer text-white ">
       <div className="max-container m-auto text-center flex flex-col items-center">
-        <div className="my-9">
-          <ul className="flex gap-8 max-md:gap-4 text-md max-md:text-xs  transition-all">
+        <div className="my-9 max-sm:my-6">
+          <ul className="flex gap-8 max-md:gap-4 text-md max-md:text-xs transition-all">
             <li className="cursor-pointer hover:text-pink  transition-all">
               Terms Of Use
             </li>
@@ -39,7 +39,7 @@ const Footer = () => {
             pariatur.
           </p>
         </div>
-        <div className="flex gap-4 my-10">
+        <div className="flex gap-4 my-10 max-sm:my-5">
           <div className="socalMedaIcon">
             <FaFacebookF />
           </div>
